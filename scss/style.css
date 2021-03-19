@@ -1,0 +1,381 @@
+@charset "UTF-8";
+* {
+  font-family: "Oswald", "微軟正黑體";
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+header {
+  position: relative;
+  background-color: #282f44;
+  text-align: center;
+}
+
+header .icon {
+  width: 80%;
+  max-width: 250px;
+  padding: 250px 0px;
+}
+
+#header_index .marginbottom {
+  position: absolute;
+  width: 95%;
+  bottom: 0%;
+  right: -5px;
+  -webkit-animation: upin 2s both;
+          animation: upin 2s both;
+}
+
+@-webkit-keyframes upin {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+@keyframes upin {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+.explore {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 16px;
+  top: 85%;
+  color: #f5d061;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.explore::after {
+  content: "v";
+  display: block;
+  -webkit-transform: scaleX(2) scaleY(0.5);
+          transform: scaleX(2) scaleY(0.5);
+}
+
+.explore.at_top {
+  opacity: 1;
+}
+
+nav .navbar {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .navbar .at_top {
+  background-color: transparent;
+}
+
+.nav-item a,
+a:visited {
+  color: #ececec !important;
+}
+
+section {
+  padding: 80px 0px;
+  position: relative;
+}
+
+#section-about {
+  background-color: #e6af2e;
+}
+
+#section-about .row {
+  height: 150px;
+  color: black;
+}
+
+#section-about .container {
+  -webkit-transform: rotate(15deg) scale(0.9);
+          transform: rotate(15deg) scale(0.9);
+}
+
+#section-about .row .r1text {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  font-size: 80px;
+}
+
+#section-about .row .r2text {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 35px;
+}
+
+#section-about .row .r3text {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-align: right;
+  font-size: 50px;
+}
+
+#cat {
+  width: 30%;
+  max-width: 300px;
+  position: absolute;
+  right: 0;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: -2px;
+}
+
+#cross {
+  position: absolute;
+}
+
+#cross::before, #cross::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 15px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#cross::after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.try {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.tri1 {
+  width: 350px;
+}
+
+.tri2 {
+  width: 20px;
+  margin-left: 20px;
+}
+
+.tri3 {
+  width: 150px;
+  margin-left: 70%;
+}
+
+.tri4 {
+  width: 70px;
+  margin-left: 100%;
+}
+
+.tri5 {
+  width: 80px;
+  margin-left: 100%;
+}
+
+#section-about .marginbottom {
+  position: absolute;
+  width: 60%;
+  top: calc(100% - 2px);
+  z-index: 10;
+}
+
+.btn-area {
+  height: 150px;
+}
+
+.btn-area a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) rotate(15deg);
+          transform: translate(-50%, -50%) rotate(15deg);
+}
+
+#section-service {
+  background-color: #ececec;
+}
+
+#section-service .col-sm-4 {
+  text-align: center;
+}
+
+#section-service h3 {
+  color: #e6af2e;
+}
+
+#section-service .icon-service {
+  width: 60%;
+}
+
+#section-works {
+  background-color: #ececec;
+}
+
+#section-works .work {
+  overflow: hidden;
+  height: 230px;
+  cursor: pointer;
+  position: relative;
+  padding: 5px;
+}
+
+#section-works .work.big {
+  height: 460px;
+}
+
+#section-works .work::before {
+  content: "";
+  display: block;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#section-works .work:hover::before,
+#section-works .work:hover .texts {
+  opacity: 1;
+}
+
+#section-works .texts {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ececec;
+  z-index: 10;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#section-works .title {
+  line-height: 24px;
+}
+
+#section-works .work img {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#section-works .marginbottom {
+  position: absolute;
+  width: 50%;
+  top: 100%;
+  right: -20px;
+  -webkit-animation: upin 2s both;
+          animation: upin 2s both;
+  z-index: 12;
+}
+
+#section-contact {
+  background-color: #282f44;
+  color: #ececec;
+  overflow: hidden;
+}
+
+input,
+textarea {
+  display: block;
+  background-color: transparent;
+  border: none;
+  border: solid 3px #282f44 !important;
+}
+
+.mails {
+  height: 400px;
+}
+
+.mailbody {
+  background-color: #ececec;
+  color: #282f44;
+  padding: 20px;
+  padding-left: 40px;
+  position: absolute;
+  width: 90%;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+}
+
+.mailcover {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform: rotate(5deg) scale(2.2) translate(-50%, -50%);
+          transform: rotate(5deg) scale(2.2) translate(-50%, -50%);
+  top: 70%;
+}
+
+.mailcover img {
+  width: 120%;
+}
+
+textarea {
+  height: 140px;
+  width: 100%;
+}
+
+footer {
+  position: relative;
+  background-color: #e6af2e;
+  text-align: center;
+}
+
+footer .icon {
+  width: 80%;
+  max-width: 250px;
+  padding: 80px 0;
+}
+
+.cat {
+  width: 150px;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#cat_blue {
+  right: 240px;
+  z-index: 3;
+}
+
+#cat_grey {
+  right: 100px;
+}
+
+#cat_yellow {
+  right: 170px;
+}
+/*# sourceMappingURL=style.css.map */
