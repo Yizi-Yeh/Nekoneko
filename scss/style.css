@@ -18,7 +18,7 @@ header {
 header .icon {
   width: 80%;
   max-width: 250px;
-  padding: 250px 0px;
+  padding: 300px 0px;
 }
 
 #header_index .marginbottom {
@@ -101,6 +101,13 @@ section {
   color: black;
 }
 
+@media screen and (max-width: 700px) {
+  #section-about .row {
+    margin-left: 1%;
+    height: 80px;
+  }
+}
+
 #section-about .container {
   -webkit-transform: rotate(15deg) scale(0.9);
           transform: rotate(15deg) scale(0.9);
@@ -112,10 +119,23 @@ section {
   font-size: 80px;
 }
 
+@media screen and (max-width: 700px) {
+  #section-about .row .r1text {
+    font-size: 4rem;
+  }
+}
+
 #section-about .row .r2text {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   font-size: 35px;
+}
+
+@media screen and (max-width: 700px) {
+  #section-about .row .r2text {
+    margin-top: 8%;
+    font-size: 1.6rem;
+  }
 }
 
 #section-about .row .r3text {
@@ -123,6 +143,12 @@ section {
   transition: 0.3s;
   text-align: right;
   font-size: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  #section-about .row .r3text {
+    font-size: 2.2rem;
+  }
 }
 
 #cat {
@@ -133,6 +159,14 @@ section {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   bottom: -2px;
+}
+
+@media screen and (max-width: 700px) {
+  #cat {
+    margin-right: -30px;
+    bottom: -20px;
+    width: 32%;
+  }
 }
 
 #cross {
@@ -166,14 +200,34 @@ section {
   width: 350px;
 }
 
+@media screen and (max-width: 700px) {
+  .tri1 {
+    width: 250px;
+  }
+}
+
 .tri2 {
   width: 20px;
   margin-left: 20px;
 }
 
+@media screen and (max-width: 700px) {
+  .tri2 {
+    display: none;
+  }
+}
+
 .tri3 {
   width: 150px;
   margin-left: 70%;
+}
+
+@media screen and (max-width: 700px) {
+  .tri3 {
+    width: 80px;
+    margin-left: 0%;
+    margin-top: 15%;
+  }
 }
 
 .tri4 {
@@ -207,12 +261,27 @@ section {
           transform: translate(-50%, -50%) rotate(15deg);
 }
 
+@media screen and (max-width: 700px) {
+  .btn-area a {
+    -webkit-transform: translate(-200%, 0%) rotate(0deg);
+            transform: translate(-200%, 0%) rotate(0deg);
+  }
+}
+
 #section-service {
   background-color: #ececec;
 }
 
 #section-service .col-sm-4 {
   text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  #section-service .col-sm-4 {
+    line-height: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
 }
 
 #section-service h3 {
@@ -237,6 +306,12 @@ section {
 
 #section-works .work.big {
   height: 460px;
+}
+
+@media screen and (max-width: 700px) {
+  #section-works .work.big {
+    height: 460px;
+  }
 }
 
 #section-works .work::before {
@@ -287,6 +362,13 @@ section {
           transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 700px) {
+  #section-works .work img {
+    height: auto;
+    width: 110%;
+  }
+}
+
 #section-works .marginbottom {
   position: absolute;
   width: 50%;
@@ -301,6 +383,15 @@ section {
   background-color: #282f44;
   color: #ececec;
   overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  #section-contact .col-sm-6 {
+    padding: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
 }
 
 input,
@@ -326,6 +417,14 @@ textarea {
           transform: translateX(-30px);
 }
 
+@media screen and (max-width: 700px) {
+  .mailbody {
+    text-align: left;
+    margin: 0 50px;
+    width: 80%;
+  }
+}
+
 .mailcover {
   position: absolute;
   left: 50%;
@@ -335,6 +434,13 @@ textarea {
   -webkit-transform: rotate(5deg) scale(2.2) translate(-50%, -50%);
           transform: rotate(5deg) scale(2.2) translate(-50%, -50%);
   top: 70%;
+}
+
+@media screen and (max-width: 700px) {
+  .mailcover {
+    -webkit-transform: rotate(15deg) scale(1.9) translate(-50%, -50%);
+            transform: rotate(15deg) scale(1.9) translate(-50%, -50%);
+  }
 }
 
 .mailcover img {
@@ -358,6 +464,13 @@ footer .icon {
   padding: 80px 0;
 }
 
+@media screen and (max-width: 700px) {
+  footer .icon {
+    width: 30%;
+    padding: 25px 0;
+  }
+}
+
 .cat {
   width: 150px;
   position: absolute;
@@ -366,13 +479,37 @@ footer .icon {
   transition: 0.3s;
 }
 
+@media screen and (max-width: 700px) {
+  .cat {
+    width: 80px;
+    position: absolute;
+    bottom: 0px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+}
+
 #cat_blue {
   right: 240px;
   z-index: 3;
 }
 
+@media screen and (max-width: 700px) {
+  #cat_blue {
+    right: 150px;
+    margin-right: 10%;
+  }
+}
+
 #cat_grey {
   right: 100px;
+}
+
+@media screen and (max-width: 700px) {
+  #cat_grey {
+    right: 80px;
+    margin-right: 10%;
+  }
 }
 
 #cat_yellow {
